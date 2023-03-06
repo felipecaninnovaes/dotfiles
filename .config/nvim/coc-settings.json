@@ -1,0 +1,37 @@
+{
+    "languageserver": {
+        "clangd": {
+            "command": "clangd",
+            "rootPatterns": [".git/", "compile_flags.txt", "compile_commands.json"],
+            "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
+        },
+    },
+    "explorer.width": 30,
+    "explorer.icon.enableNerdfont": true,
+    "explorer.previewAction.onHover": false,
+    "explorer.keyMappings.global": {
+            "<cr>": ["expandable?", "expand", "open"],
+            "h": "open:split",
+            "v": "open:vsplit"
+    },
+    "explorer.git.enable": true,
+    "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "css",
+    "scss",
+    "html",
+    "json"
+  ],
+  "cursors.nextKeys": "<tab>",
+  "tsserver.formatOnType": true,
+  "javascript.format.enabled": true,
+  "javascript.showUnused": true,
+  "javascript.autoClosingTags": true,
+  "javascriptreact.formatOnType": true,
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "typescript.suggest.autoImports": true,
+  "snippets.ultisnips.pythonPrompt": false
+}
