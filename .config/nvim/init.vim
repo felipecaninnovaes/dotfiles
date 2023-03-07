@@ -17,6 +17,7 @@ Plug 'honza/vim-snippets'
 Plug 'jiangmiao/auto-pairs'
 Plug 'rust-lang/rust.vim'
 Plug 'rust-lang/rust-analyzer'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 if (has("nvim"))
     Plug 'nvim-lua/plenary.nvim'
@@ -125,6 +126,7 @@ nmap <C-a> :NERDTreeToggle<CR>
 let g:ale_linters = {
 \   'python': ['flake8', 'pyright'],
 \   'rust': ['analyzer'],
+\   'shell': ['shellcheck'],
 \}
 
 let g:ale_fixers =  {
@@ -153,7 +155,7 @@ endif
 
 " Coc """""""""""""""""""""""""""""""""""""""""""""""
 
-let  g:coc_global_extensions = ['coc-snippets', 'coc-explorer', 'coc-clangd', 'coc-rust-analyzer']
+let  g:coc_global_extensions = ['coc-snippets', 'coc-explorer', 'coc-clangd', 'coc-rust-analyzer', 'coc-sh']
 
 " May need for Vim (not Neovim) since coc.nvim calculates byte offset by count
 " utf-8 byte sequence
