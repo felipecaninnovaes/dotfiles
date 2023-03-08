@@ -1,5 +1,12 @@
 # DotFiles
 
+Installation i3 Config
+------------
+
+Afterwards enter the following command to install my i3 configuration and apps:
+
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/felipecaninnovaes/dotfiles/main/i3_config.sh)";
+
 ## PC Specification
 
 | Component        | Model                                              |
