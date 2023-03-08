@@ -1,0 +1,12 @@
+backend = "glx";
+vsync = true
+use-damage = true
+log-level = "warn";
+wintypes:
+{
+  tooltip = { fade = true; shadow = true; full-shadow = true; };
+  dock = { fade = true; shadow = true; full-shadow = true; }
+  dnd = { fade = true; shadow = true; full-shadow = true; }
+  popup_menu = { fade = false; shadow = false; full-shadow = false; }
+  dropdown_menu = { fade = false; shadow = false; full-shadow = false; }
+};
