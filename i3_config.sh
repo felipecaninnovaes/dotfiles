@@ -21,7 +21,7 @@ export terminal_apps=(nano neovim wget curl neofetch bash-completion scrot);
 # ---------- FUNCOES ---------- #
 
 messages() {
-    if [ "$3" = 0 ]; then 
+    if [ "$3" = 0 ]; then
         echo -e "$1" " --- [$2] --- \033[0m";
     else
         echo -e "$1" " --- [$2] --- \033[0m \n";
@@ -29,7 +29,7 @@ messages() {
 }
 
 messages_apps() {
-    if [ "$4" = 0 ]; then 
+    if [ "$4" = 0 ]; then
         echo -e "$1" "[$2] - $3 \033[0m";
     else
         echo -e "$1" "[$2] - $3 \033[0m \n";
@@ -43,7 +43,7 @@ install_apps_xbps() {
     if ! xbps-query -l | awk '{ print $2 }' | xargs -n1 xbps-uhelper getpkgname | grep -E "(^|\s)$nome_do_app($|\s)" ; then
         messages_apps "$yellow_color" "INSTALANDO" "$nome_do_app" 0;
         if ! sudo xbps-install "$nome_do_app" -y > /dev/null 2>&1; then
-            messages_apps "$red_color" "Erro ao instalar" "$nome_do_app" 0; 
+            messages_apps "$red_color" "Erro ao instalar" "$nome_do_app" 0;
             exit 1;
         fi
         messages_apps "$green_color" "CONCUIDO"  "$nome_do_app" 0;
@@ -81,7 +81,7 @@ sleep 0.5
 
 # ---------- INSTALAR APPS VIA XBPS ---------- #
 
-install_apps_xbps $"xorg_drivers[@]";  
+install_apps_xbps $"xorg_drivers[@]";
 install_apps_xbps $"libs[@]";
 install_apps_xbps $"plugins[@]";
 install_apps_xbps $"langueges[@]";
@@ -110,8 +110,22 @@ messages "$yellow_color" "Iniciando configuração da HOME" 0
 
 xdg-user-dirs-update --force
 cd "$HOME" || exit 0
-git clone https://github.com/felipecaninnovaes/dotfiles
-cp -r "$HOME/dotfiles/.config/*" "$HOME/.config/"
-cp -r "$HOME/dotfiles/.zshrc" "$HOME/"
+
+if [ -d "$HOME/dotfiles" ];
+then
+    printf "Já existe um diretorio dotfiles, deseja proceguir, apagado instalação aterior (Y/N): "; read -r value
+    if [ "$value" = "Y" ]; then
+        sudo rm -r "$HOME/dotfiles";
+        git clone https://github.com/felipecaninnovaes/dotfiles;
+        cp -r "$HOME/dotfiles/.config/"* "$HOME/.config/";
+    else
+        messages "$red_color" "Não será instalado as configuracoes" 0
+    fi
+else
+    git clone https://github.com/felipecaninnovaes/dotfiles;
+    cp -r "$HOME/dotfiles/.config/"* "$HOME/.config/";
+fi
+
+cp -r "$HOME/dotfiles/.zshrc" "$HOME/";
 
 bash -c echo "exec i3" > ~/.xinitrc;
