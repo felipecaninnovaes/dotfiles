@@ -16,7 +16,7 @@ export services=(openssh git htop zsh flatpak bluez);
 export desktop_apps=(alacritty slim nitrogen xdg-desktop-portal xdg-desktop-portal-gtk xdg-user-dirs xdg-utils i3 Thunar file-roller i3status i3lock i3blocks firefox dmenu polybar);
 export fonts=(noto-fonts-ttf liberation-fonts-ttf);
 export terminal_apps=(nano neovim wget curl neofetch bash-completion scrot);
-
+export tauri_deps=(curl wget openssl-devel webkit2gtk-devel appmenu-gtk-module libappindicator librsvg libvips gdk-pixbuf-devel cairo-devel pango-devel libsoup-devel libgtkdgl-devel webkit2gtk-devel)
 
 # ---------- FUNCOES ---------- #
 
@@ -89,6 +89,7 @@ install_apps_xbps $"services[@]";
 install_apps_xbps $"desktop_apps[@]";
 install_apps_xbps $"fonts[@]";
 install_apps_xbps $"terminal_apps[@]";
+install_apps_xbps $"tauri_deps[@]";
 
 # ---------- INSTALANDO OH-MY-ZSH ---------- #
 
