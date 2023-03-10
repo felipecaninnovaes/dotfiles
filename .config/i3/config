@@ -7,7 +7,7 @@ client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
 client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 
 client.background       #F8F8F2
-
+default_border pixel 0
 # It will not be overwritten, so edit it as you like.
 #
 # Should you change your keyboard layout some time, delete

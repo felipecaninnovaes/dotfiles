@@ -1,4 +1,3 @@
-
 -- My Options config file
 
 -- mapleader key
@@ -24,6 +23,7 @@ vim.g.background = "dark"
 vim.opt.termguicolors = true
 vim.g.transparent_enabled = true
 vim.cmd[[colorscheme dracula]]
+
 -- Editor
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -51,14 +51,3 @@ vim.opt.whichwrap:append {
 	h = true,
 	l = true
 }
-
--- Floaterminal setup
--- vim.g.floaterm_shell = 'powershell'
--- vim.g.floaterm_keymap_new = '<Leader>ft'
--- vim.g.floaterm_keymap_prev = '<Leader>fp'
--- vim.g.floaterm_keymap_next = '<Leader>fn'
--- vim.g.floaterm_keymap_toggle = '<Leader>t'
--- vim.g.floaterm_keymap_kill = '<Leader>fk'
--- vim.g.floaterm_title='>( /ᐠ｡ꞈ｡ᐟ\\ )<'
--- vim.g.floaterm_height = .6
--- vim.g.floaterm_width = .9

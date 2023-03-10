@@ -1,8 +1,8 @@
-require "plugins"
-require "options"
-require "keybinds"
---require "rust_conf"
--- Você pode usar o campo `config` do packer para chamar esses arquivos
-require "airlineOptions"
-require "indentBlankLineRainbow"
-require "autocommands"
+require("configs.packer")
+require("plugins.plugins")
+require("configs.keymaps")
+require("configs.settings")
+require("plugins.lsp")
+require("plugins.utils")
+require("plugins.complete")
+require("plugins.airlineOptions")
