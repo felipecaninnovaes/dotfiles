@@ -33,9 +33,9 @@ Enter the following command to install my i3 configuration and apps:
 | OS Disk OS Disk (NVMe)| SSD Husky Gaming M.2 NVME 256gb               |
 | RAM              | 1x 8GB 3200Mhz DDR4 RAM                            |
 | GPU              | Intel® Iris® Xe Graphics                           |
-| SO               | Fedora 38 Beta                                     |
-| Interface        | Gnome 44 Beta                                      |
-| Kernel           | 6.2                                                |
+| OS               | Void Linux x86_64 i3 Window Manager                |
+| Interface        | i3 Window Manager                                  |
+| Kernel           | 6.1                                                |
 
 ## Credits and links
 
