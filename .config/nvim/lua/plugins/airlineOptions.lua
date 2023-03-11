@@ -22,3 +22,6 @@ vim.g.airline_right_sep = ''
 vim.g.airline_symbols_branch = ''
 vim.g.airline_symbols_readonly = ''
 vim.g.airline_symbols_linenr = ''
+
+-- AirLine Theme setup
+vim.g.airline_theme = 'dracula'

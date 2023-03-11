@@ -1,8 +1,3 @@
-require("configs.packer")
-require("plugins.plugins")
-require("configs.keymaps")
 require("configs.settings")
-require("plugins.lsp")
-require("plugins.utils")
-require("plugins.complete")
-require("plugins.airlineOptions")
+require("plugins.plugins")
+

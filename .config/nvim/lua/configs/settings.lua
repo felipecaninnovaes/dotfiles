@@ -1,14 +1,17 @@
--- My Options config file
 
 -- mapleader key
 vim.g.mapleader = ','
 
+-- Load configs
+require('configs.colorscheme')
+require("configs.autocmd")
+require("configs.keymaps")
+
 -- Colorizer
-vim.opt.termguicolors = true -- precisa ser adicionado antes do plugin
 require('colorizer').setup()
 
--- AirLine Theme setup
-vim.g.airline_theme = 'dracula'
+
+
 
 -- General Setup
 vim.opt.compatible = false
@@ -17,12 +20,10 @@ vim.opt.swapfile = false
 vim.opt.history = 100
 vim.opt.lazyredraw = true
 vim.opt.synmaxcol = 240
-
+vim.o.completeopt = 'menuone,noselect'
 -- Theme
-vim.g.background = "dark"
 vim.opt.termguicolors = true
 vim.g.transparent_enabled = true
-vim.cmd[[colorscheme dracula]]
 
 -- Editor
 vim.opt.number = true
@@ -35,7 +36,6 @@ vim.opt.foldmethod = 'marker'
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.opt.conceallevel = 0
-vim.opt.colorcolumn = '80'
 vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 vim.opt.expandtab = true
