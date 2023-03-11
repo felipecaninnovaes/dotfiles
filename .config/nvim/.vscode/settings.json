@@ -1,0 +1,9 @@
+{
+    "Lua.diagnostics.globals": [
+        "ns",
+        "use",
+        "vim",
+        "opts",
+        "bold"
+    ]
+}
