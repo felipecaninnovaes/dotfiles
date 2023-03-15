@@ -7,6 +7,24 @@ Enter the following command to install my i3 configuration and apps:
 
     bash -c "$(curl -fsSL https://raw.githubusercontent.com/felipecaninnovaes/dotfiles/main/i3_config.sh)";
 
+Installation Nvim Configs
+------------
+
+Enter the following command to install my nvim configurations:
+
+> Unix, Linux Installation
+
+```shell
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
+```shell
+git clone https://github.com/felipecaninnovaes/dotfiles;
+cp dotfiles;
+cp -r .config ~/;
+nvim +PackerInstall;
+```
+
 ## PC Specification
 
 | Component        | Model                                              |
