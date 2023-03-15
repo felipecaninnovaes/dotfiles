@@ -1,6 +1,6 @@
 # DotFiles
 
-Installation i3 Config
+Installation i3 Config Void Linux
 ------------
 
 Enter the following command to install my i3 configuration and apps:
@@ -33,9 +33,9 @@ Enter the following command to install my i3 configuration and apps:
 | OS Disk OS Disk (NVMe)| SSD Husky Gaming M.2 NVME 256gb               |
 | RAM              | 1x 8GB 3200Mhz DDR4 RAM                            |
 | GPU              | Intel® Iris® Xe Graphics                           |
-| OS               | Void Linux x86_64 i3 Window Manager                |
-| Interface        | i3 Window Manager                                  |
-| Kernel           | 6.1                                                |
+| OS               | Fedora 38                                          |
+| Interface        | Gnome 44                                           |
+| Kernel           | 6.2                                                |
 
 ## Credits and links
 
