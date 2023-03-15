@@ -20,7 +20,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 ```
 ```shell
 git clone https://github.com/felipecaninnovaes/dotfiles;
-cp dotfiles;
+cd dotfiles;
 cp -r .config ~/;
 nvim +PackerInstall;
 ```
