@@ -29,13 +29,13 @@ nvim +PackerInstall;
 
 | Component        | Model                                              |
 | ---------------- | ---------------------------------------------------|
-| CPU              | AMD Ryzen 7 5700x                                  |
+| CPU              | AMD Ryzen™ 7 5700X                                 |
 | MotherBoard      | Gigabyte GA-AB350M-DS3H V2                         |
 | Wifi/Bluetooth   | USB Stick Orico Bluetooth 5.0                      |
-| OS Disk OS Disk (NVMe)| SSD Samsung M.2 NVME 256gb               |
+| OS Disk OS Disk (NVMe)| SSD Husky Gaming M.2 NVME 256gb               |
 | RAM              | 4x Husky Gaming 8GB 2666Mhz DDR4 CL19 32GB RAM     |
 | GPU              | GTX 1660 SUPER                                     |
-| Cooler    	     | Cooler Master Hyper H412R - RR-H412-20PK-R2        |
+| Cooler    	   | Cooler Master Hyper H412R - RR-H412-20PK-R2        |
 | OS               | Void Linux x86_64 i3 Window Manager                |
 | Interface        | i3 Window Manager                                  |
 | Kernel           | 6.1                                                |
@@ -48,7 +48,7 @@ nvim +PackerInstall;
 | Model            | Samsung Book                                       |
 | Processor        | Intel® Core™ i5-1135G7                             |
 | Wifi/Bluetooth   | Intel Bluethooth 5.2 / Wifi 6                      |
-| OS Disk OS Disk (NVMe)| SSD Husky Gaming M.2 NVME 256gb               |
+| OS Disk OS Disk (NVMe)| SSD Samsung M.2 NVME 256gb                    |
 | RAM              | 1x 8GB 3200Mhz DDR4 RAM                            |
 | GPU              | Intel® Iris® Xe Graphics                           |
 | OS               | Fedora 38                                          |
