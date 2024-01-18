@@ -41,6 +41,9 @@ mapkey("<leader>w", "write", "n")
 -- Close
 mapkey("<leader>q", "close", "n")
 
+-- Quit
+mapkey("<leader>Q", "qa!", "n")
+
 -- Indenting
 vim.keymap.set("v", "<", "<gv", { silent = true, noremap = true })
 vim.keymap.set("v", ">", ">gv", { silent = true, noremap = true })
@@ -53,7 +56,12 @@ vim.keymap.set("n", "<C-k>", "<cmd>lua vim.lsp.buf.signature_help()<CR>", { sile
 vim.keymap.set("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", { silent = true, noremap = true })
 vim.keymap.set("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>", { silent = true, noremap = true })
 vim.keymap.set("n", "<leader>wa", "<cmd>lua vim.lsp.buf.add_workspace_folder()<CR>", { silent = true, noremap = true })
-vim.keymap.set("n", "<leader>wr", "<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>", { silent = true, noremap = true })
+vim.keymap.set(
+	"n",
+	"<leader>wr",
+	"<cmd>lua vim.lsp.buf.remove_workspace_folder()<CR>",
+	{ silent = true, noremap = true }
+)
 vim.keymap.set("i", "<C-k>", "<cmd>lua vim.lsp.buf.signature_help()<CR>", { silent = true, noremap = true })
 
 -- Move
@@ -65,5 +73,3 @@ local api = vim.api
 -- Comments
 api.nvim_set_keymap("n", "<C-/>", "gtc", { noremap = false })
 api.nvim_set_keymap("v", "<C-/>", "goc", { noremap = false })
-
-

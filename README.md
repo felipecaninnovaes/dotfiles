@@ -53,12 +53,12 @@ cp -r .config ~/;
 | Model                  | Samsung Book                  |
 | Processor              | Intel® Core™ i5-1135G7      |
 | Wifi/Bluetooth         | Intel Bluethooth 5.2 / Wifi 6 |
-| OS Disk OS Disk (NVMe) | SSD Samsung M.2 NVME 256gb    |
-| RAM                    | 1x 8GB 3200Mhz DDR4 RAM       |
+| OS Disk OS Disk (NVMe) | SSD Kingston Nv2 NVMe 1TB     |
+| RAM                    | 2x 8GB 3200Mhz DDR4 RAM       |
 | GPU                    | Intel® Iris® Xe Graphics    |
-| OS                     | Fedora 38                     |
-| Interface              | Gnome 44                      |
-| Kernel                 | 6.2                           |
+| OS                     | Opensuse Tumbleweed           |
+| Interface              | Kde 5.27                      |
+| Kernel                 | 6.6.11                        |
 
 ## Credits and links
 

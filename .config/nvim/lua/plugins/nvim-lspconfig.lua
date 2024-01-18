@@ -105,7 +105,6 @@ local config = function()
 	-- 	on_attach = on_attach,
 	-- 	settings = require("plugins.lsps.rust").settings,
 	-- })
-
 end
 
 return {

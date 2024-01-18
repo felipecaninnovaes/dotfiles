@@ -1,4 +1,3 @@
--- lua/plugins/rustacean.lua
 return {
     {
         "rust-lang/rust.vim",
