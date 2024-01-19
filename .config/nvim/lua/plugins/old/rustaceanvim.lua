@@ -56,6 +56,13 @@ return {
                     },
                 },
             },
+            on_attach = function()
+                vim.api.nvim_create_autocmd("BufWritePre", {
+                    callback = function()
+                        vim.lsp.buf.formatting()
+                    end,
+                })
+            end
         },
         config = function(_, opts)
             vim.g.rustaceanvim = vim.tbl_deep_extend("force", {}, opts or {})

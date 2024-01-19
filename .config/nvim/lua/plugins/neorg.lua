@@ -12,9 +12,7 @@ return {
 					["core.dirman"] = { -- Manages Neorg workspaces
 						config = {
 							workspaces = {
-								general = "~/Documents/Notes/general",
-								work = "~/Documents/Notes/work",
-								youtube = "~/Documents/Notes/youtube",
+								general = "~/Desktop/PROJECTS",
 							},
 							default_workspace = "general",
 						},

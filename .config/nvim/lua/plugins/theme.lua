@@ -5,6 +5,10 @@ return {
 	priority = 1000,
 	config = function()
 		require("catppuccin").setup({
+			background = { -- :h background
+				light = "latte",
+				dark = "mocha",
+			},
 			transparent_background = true,
 			integrations = {
 				aerial = true,

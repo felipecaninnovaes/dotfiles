@@ -36,20 +36,28 @@ local config = function()
 			enable = true,
 			additional_vim_regex_highlighting = true,
 		},
+		autotag = {
+			enable = true,
+		},
 		incremental_selection = {
 			enable = true,
 			keymaps = {
-				init_selection = "<C-s>",
-				node_incremental = "<C-s>",
+				init_selection = '<enter>',
+				node_incremental = '<enter>',
 				scope_incremental = false,
-				node_decremental = "<BS>",
+				node_decremental = '<bs>',
 			},
 		},
 	})
+	require('template-string').setup {}
 end
 
 return {
 	"nvim-treesitter/nvim-treesitter",
 	lazy = false,
 	config = config,
+	dependencies = {
+		'windwp/nvim-ts-autotag',
+		'axelvc/template-string.nvim',
+	},
 }
