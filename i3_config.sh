@@ -7,8 +7,10 @@ export blue_color="\033[1;34m"
 export red_color="\033[1;31m"
 export grey_color="\033[40;1;37m"
 export yellow_color="\033[1;33m"
-
-export xorg_drivers=(nvidia xorg-server xorg-apps xorg-minimal xinit xcape compton);
+# Nvidia
+#export xorg_drivers=(nvidia xorg-server xorg-apps xorg-minimal xinit xcape compton);
+# Intel
+export xorg_drivers=(mesa-dri mesa-vulkan-intel intel-video-accel libva-intel-driver xorg-server xorg-apps xorg-minimal xinit xcape compton);
 export libs=(glu base-devel);
 export plugins=(sysstat lm_sensors thunar-archive-plugin python3-pip shellcheck);
 export langueges=(nodejs python3 perl);
