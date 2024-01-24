@@ -61,10 +61,10 @@ messages "$yellow_color" "Agora vamos iniciar o processo de atualização do Voi
 sleep 0.5
 messages "$yellow_color" "Adicionando repositorios extras" 0
 
-echo "repository=https://voidlinux.com.br/repo/current" | sudo tee -a /etc/xbps.d/00-repository-main.conf > /dev/null || exit 1;
-echo "repository=https://voidlinux.com.br/repo/current/nonfree" | sudo tee -a /etc/xbps.d/10-repository-nonfree.conf > /dev/null|| exit 1;
-echo "repository=https://voidlinux.com.br/repo/current/multilib" | sudo tee -a /etc/xbps.d/10-repository-multilib.conf > /dev/null|| exit 1;
-echo "repository=https://voidlinux.com.br/repo/current/multilib/nonfree" | sudo tee -a /etc/xbps.d/10-repository-multilib-nonfree.conf > /dev/null|| exit 1;
+echo "repository=https://repo-fastly.voidlinux.org/current" | sudo tee -a /etc/xbps.d/00-repository-main.conf > /dev/null || exit 1;
+echo "repository=https://repo-fastly.voidlinux.org/current/nonfree" | sudo tee -a /etc/xbps.d/10-repository-nonfree.conf > /dev/null|| exit 1;
+echo "repository=https://repo-fastly.voidlinux.org/current/multilib" | sudo tee -a /etc/xbps.d/10-repository-multilib.conf > /dev/null|| exit 1;
+echo "repository=https://repo-fastly.voidlinux.org/current/multilib/nonfree" | sudo tee -a /etc/xbps.d/10-repository-multilib-nonfree.conf > /dev/null|| exit 1;
 
 if ! sudo xbps-install void-repo-multilib void-repo-multilib-nonfree void-repo-nonfree -y > /dev/null 2>&1; then
     messages "$red_color" "Erro ao adicionar repositorios" 0
