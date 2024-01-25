@@ -1,13 +1,12 @@
 { pkgs, ... }: {
   environment = {
     systemPackages = with pkgs; [
-      firefox
-      git
-      curl
-      vim
-      neovim
-      dbus
+      unzip
+      lua
+      python3
+      gcc
+      nodejs_21
+      glib
     ];
   };
 }
-
