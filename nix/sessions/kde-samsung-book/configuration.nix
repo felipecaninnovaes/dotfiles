@@ -12,7 +12,8 @@
     ../../modules/services/bluetooth.nix
     ../../modules/services/pipewire.nix
     ../../modules/interfaces/kde.nix
-    ../../modules/packages/base.nix    
+    ../../modules/packages/base.nix
+    ../../modules/packages/development.nix
 
     ./hardware-configuration.nix
   ];

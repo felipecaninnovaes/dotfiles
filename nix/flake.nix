@@ -24,8 +24,12 @@
         nixos-kde-vm = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs outputs; };
           modules = [ ./sessions/kde-vm/configuration.nix ];
+          };
+        nixos-kde-samsung-book = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs outputs; };
+          modules = [ ./sessions/kde-samsung-book/configuration.nix ];
+          };
         };
-      };
 
       # Standalone home-manager configuration entrypoint
       # Available through 'home-manager --flake .#your-username@your-hostname'
