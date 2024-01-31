@@ -29,7 +29,6 @@ return {
 				"clangd",
 				"biome",
 				"rust_analyzer",
-				"rnix-lsp",
 			},
 
 			automatic_installation = true,
