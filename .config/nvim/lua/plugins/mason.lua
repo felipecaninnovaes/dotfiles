@@ -43,6 +43,7 @@ return {
 				"black", -- python formatter
 				"pylint", -- python linter
 				"biome", -- js linter
+				"rnix-lsp",
 			},
 		})
 	end,

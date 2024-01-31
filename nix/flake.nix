@@ -29,6 +29,10 @@
           specialArgs = { inherit inputs outputs; };
           modules = [ ./sessions/kde-samsung-book/configuration.nix ];
           };
+        nixos-kde-amd-pc = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs outputs; };
+          modules = [ ./sessions/kde-amd-pc/configuration.nix ];
+          };
         };
 
       # Standalone home-manager configuration entrypoint

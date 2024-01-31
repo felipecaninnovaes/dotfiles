@@ -1,12 +1,14 @@
 { pkgs, ... }: {
   environment = {
     systemPackages = with pkgs; [
-      firefox
+#      firefox
+      zsh
       git
       curl
       vim
       neovim
       dbus
+      geekbench
     ];
   };
 }

@@ -7,6 +7,9 @@
       gcc
       nodejs_21
       glib
+      rustc
+      cargo
+      rust-analyzer
     ];
   };
 }
